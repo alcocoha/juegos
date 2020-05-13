@@ -1,0 +1,61 @@
+@media (min-width:992px){
+    /* ==== INICIAN ESTILOS PARA EL HEADER ===== */
+    .nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .final-button{
+        opacity: 1;
+    }
+    .final-b{
+        opacity: 0;
+    }
+    /* ==== TERMINAN ESTILOS PARA EL HEADER ===== */
+
+    .container {
+        padding: 10px 0;
+        /* background-color: violet; */
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .game-wrapper{
+        width: 550px;
+        height: 500px;
+        padding: 30px;
+    }
+    .ask-wrapper .crossword-clues .row{
+        width: 350px;
+    }
+    .ask-wrapper .crossword-clues li{
+        margin-top: 30px;
+    }
+    .list{
+        font-size: 14px;
+    }
+    .point-number{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .title-direction{
+        padding: 20px;
+        font-size: 15px;
+    }
+    .across-clues{
+        width: 160px;
+    }
+    .down-clues{
+        width: 160px;
+    }
+    .title-direction::before{
+        width: 35px;
+        height: 35px;
+        left: -20px;
+        border-radius: 50%;
+        top: 12px;
+    }
+
+}

@@ -1,0 +1,40 @@
+@media (min-width:1200px){
+    .game-wrapper{
+        width: 650px;
+        height: 580px;
+        padding: 50px;
+    }
+    .ask-wrapper .crossword-clues .row{
+        width: 450px;
+    }
+    .ask-wrapper .crossword-clues li{
+        margin-top: 40px;
+    }
+    .list{
+        font-size: 18px;
+    }
+    .point-number{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .title-direction{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .across-clues{
+        width: 200px;
+    }
+    .down-clues{
+        width: 200px;
+    }
+    .title-direction::before{
+        width: 45px;
+        height: 45px;
+        left: -20px;
+        border-radius: 50%;
+        top: 12px;
+    }
+}

@@ -1,0 +1,176 @@
+body{
+    background-color: #F7F7F9;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ==== INICIAN ESTILOS PARA EL HEADER === */
+header{
+    background-color: #F7F7F9;
+    padding: 10px 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.breadcrumb{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.title-content{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+.title-img img{
+    width: 100px;
+}
+.title-product{
+    border-left: 2px solid #535D7E;
+    color: #8092A0;
+    font-size: 14px;
+    margin-left: 20px;
+    padding-left: 15px;
+    align-items: center;
+    display: flex;
+}
+.border-title img{
+    width: 80%;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    height: 80px;
+    align-items: center;
+
+}
+
+.btns-nav-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-return{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    color: #577bf8;
+}
+
+.button-header{
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid #535d7e;
+    color: #535d7e;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+}
+
+.active-button{
+    color: white;
+    background-color: #535d7e;
+}
+
+.button-header:hover{
+    color: white;
+    background-color: #535d7e;
+}
+.instruction{
+    color: #545e7f;
+}
+.instruction h1{
+    font-size: 20px;
+}
+.instruction span{
+    font-size: 16px;
+}
+.border-title{
+    position: relative;
+}
+.final-button-error,
+.final-button{
+    width: 400px;
+    position: absolute;
+    right: 0;
+    top: -28px;
+    opacity: 0;
+    display: none;
+}
+
+.final-b-error,
+.final-b{
+    width: 300px;
+    margin: auto;
+    display: none;
+    opacity: 1;
+}
+.final-b-error img,
+.final-b img{
+    width: 100%;
+}
+.final-button-error,
+.final-b-error{
+    cursor: pointer;
+}
+
+/* ==== TERMINAN ESTILOS PARA EL HEADER === */
+
+.container-letters{
+    width: 300px;
+    margin: auto;
+    padding: 20px 20px;
+    border-radius: 8px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(168,168,168,1);
+    box-shadow: 0px 0px 14px 0px rgba(168,168,168,1);
+    margin-bottom: 50px;
+}
+.hangman{
+    margin: auto;
+    display: flex;
+}
+.instructions-question{
+    width: 300px;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+.bluepoint{
+    font-size: 25px;
+    color: #535D7E;
+    position: relative;
+    height: 55px;
+    padding-left: 32px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+}
+
+.bluepoint::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #577bf8;
+    position: absolute;
+    left: -10px;
+    border-radius: 50%;
+    top: 10px;
+}
+.question{
+    height: 55px;
+    padding-left: 32px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #8092A0;
+    font-size: 18px;
+}

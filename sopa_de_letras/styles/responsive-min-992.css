@@ -1,0 +1,23 @@
+@media (min-width:992px){
+    /* ==== INICIAN ESTILOS PARA EL HEADER ===== */
+    .nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* ==== TERMINAN ESTILOS PARA EL HEADER ===== */
+
+    #main {
+        padding: 10px 0;
+        /* background-color: violet; */
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .words-content {
+        width: 350px;
+    }
+    .list-item{
+        font-size: 12px;
+    }
+
+}

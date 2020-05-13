@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sanofi - Sopa de letras</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general-style.css">
+    <link rel="stylesheet" href="styles/game-style.css">
+    <link type="text/css" href="styles/responsive-min-768.css" rel="stylesheet" />
+    <link type="text/css" href="styles/responsive-min-992.css" rel="stylesheet" />
+    <link type="text/css" href="styles/responsive-min-1200.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="breadcrumb">
+      Inicio > Apoyo en consulta > Actividades Lúdicas
+    </div>
+    <div class="nav">
+      <div class="button-return">
+        <img src="assets/left-row.png" alt="">Regresar
+      </div>
+      <div class="btns-nav-wrapper">
+        <a href="" class="button-header"> Crucigrama </a>
+        <a href="" class="button-header active-button"> Sopa de letras </a>
+        <a href="" class="button-header"> Ahorcado </a>
+      </div>
+  </div>
+  <div class="title-content">
+    <div class="title-img">
+      <img src="assets/logo_orofibratos.png" alt="">
+    </div>
+    <div class="title-product">
+      Diuresis controlada
+    </div>
+  </div>
+  <div class="border-title">
+    <img src="assets/linea_oro.png" alt="">
+    <div id="final" class="final-button">
+      <img src="assets/btn_finalizado.png" alt="">
+    </div>
+  </div>
+  <div class="instruction">
+    <h1>Sopa de letras</h1>
+    <span>Encuentre las palabras ubicadas en la parte inferior de la tabla.</span>
+  </div>
+  </header>
+	<div id="main">
+    <div class="letters-content">
+      <div class="letters">
+        <canvas id="f" width="750" height="750" ></canvas>
+        <canvas id="e" width="750" height="750" ></canvas>
+
+        <canvas id="d" width="600" height="600" ></canvas>
+        <canvas id="c" width="600" height="600" ></canvas>
+
+        <canvas id="b" width="300" height="300" ></canvas>
+        <canvas id="a" width="300" height="300" ></canvas>
+      </div>
+    </div>
+    <div class="words-content">
+      <div class="words">
+      </div>
+  	</div>
+  </div>
+
+  <div id="final-bottom" class="final-b">
+    <img src="assets/btn_finalizado.png" alt="">
+  </div>
+
+  <script  src="scripts/game.js"></script>
+</body>
+</html>

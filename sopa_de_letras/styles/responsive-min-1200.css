@@ -1,0 +1,34 @@
+@media (min-width:1200px){
+    #main {
+        padding: 10px 50px;
+        /* background-color: tomato; */
+    }
+    .words-content {
+        width: 450px;
+    }
+    .list-item{
+        font-size: 16px;
+    }
+
+    .letters-content {
+        width: 750px;
+        height: 750px;
+    }
+
+    .list-item-number{
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+
+    .letters span {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    #a, #b, #c, #d
+    { display: none; }
+    #e, #f
+    { display: block; }
+}

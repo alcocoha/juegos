@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sanofi - Ahorcado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'> -->
+  <link rel="stylesheet" href="styles/game-style.css">
+  <link rel="stylesheet" href="styles/general-style.css">
+  <link type="text/css" href="styles/responsive-min-768.css" rel="stylesheet" />
+  <link type="text/css" href="styles/responsive-min-992.css" rel="stylesheet" />
+  <link type="text/css" href="styles/responsive-min-1200.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="breadcrumb">
+      Inicio > Apoyo en consulta > Actividades Lúdicas
+    </div>
+    <div class="nav">
+      <div class="button-return">
+        <img src="assets/left-row.png" alt="">Regresar
+      </div>
+      <div class="btns-nav-wrapper">
+        <a href="" class="button-header"> Crucigrama </a>
+        <a href="" class="button-header"> Sopa de letras </a>
+        <a href="" class="button-header active-button"> Ahorcado </a>
+      </div>
+  </div>
+  <div class="title-content">
+    <div class="title-img">
+      <img src="assets/logo_orofibratos.png" alt="">
+    </div>
+    <div class="title-product">
+      Diuresis controlada
+    </div>
+  </div>
+  <div class="border-title">
+    <img src="assets/linea_oro.png" alt="">
+
+    <div id="final" class="final-button">
+      <img src="assets/btn_finalizado.png" alt="">
+    </div>
+    <div id="final-error" class="final-button-error">
+      <img src="assets/intentalo.png" alt="">
+    </div>
+  </div>
+  <div class="instruction">
+    <h1>Ahorcado</h1>
+    <span>Seleccione las letras para completar la respuesta o respuestas correctas.</span>
+  </div>
+  </header>
+
+<!-- partial:index.partial.html -->
+<!--Scroll down and cheat, if you don't want to cheat and want a different word - change the value of reset and a new word will be generated (not based on reset)-->
+<div class="instructions-question">
+  <div class="bluepoint">
+    Pregunta 1
+  </div>
+  <div class="question">
+    ¿Clase terapéutica del Oro de los Fibratos?
+  </div>
+</div>
+<div class="container-letters">
+    <input type="radio" letter="A" correct="correct" id="letter-A"/>
+    <input type="radio" letter="B" correct="correct" id="letter-B"/>
+    <input type="radio" letter="C" class="error"/>
+    <input type="radio" letter="D" class="error"/>
+    <input type="radio" letter="E" class="error"/>
+    <input type="radio" letter="F" correct="correct" id="letter-F"/>
+    <input type="radio" letter="G" class="error"/>
+    <input type="radio" letter="H" class="error"/>
+    <input type="radio" letter="I" correct="correct" id="letter-I"/>
+    <input type="radio" letter="J" class="error"/>
+    <input type="radio" letter="K" class="error"/>
+    <input type="radio" letter="L" class="error"/>
+    <input type="radio" letter="M" class="error"/>
+    <input type="radio" letter="N" class="error"/>
+    <input type="radio" letter="O" correct="correct" id="letter-O"/>
+    <input type="radio" letter="P" class="error"/>
+    <input type="radio" letter="Q" class="error"/>
+    <input type="radio" letter="R" correct="correct" id="letter-R"/>
+    <input type="radio" letter="S" class="error"/>
+    <input type="radio" letter="T" correct="correct" id="letter-T"/>
+    <input type="radio" letter="U" class="error"/>
+    <input type="radio" letter="V" class="error"/>
+    <input type="radio" letter="W" class="error"/>
+    <input type="radio" letter="X" class="error"/>
+    <input type="radio" letter="Y" class="error"/>
+    <input type="radio" letter="Z" class="error"/>
+    <div class="break"></div>
+    <svg class="hangman" viewBox="0 0 96 96">
+      <line class="stage10" x1="62" y1="70" x2="56" y2="56"></line>
+      <line class="stage9" x1="50" y1="70" x2="56" y2="56"></line>
+      <line class="stage8" x1="68" y1="46" x2="56" y2="40"></line>
+      <line class="stage7" x1="44" y1="46" x2="56" y2="40"></line>
+      <line class="stage6" x1="56" y1="40" x2="56" y2="56"></line>
+      <circle class="stage5" cx="56" cy="34" r="6"></circle>
+      <line class="stage4" x1="56" y1="16" x2="56" y2="28"></line>
+      <line class="stage3" x1="24" y1="24" x2="32" y2="16"></line>
+      <line class="stage3" x1="21" y1="16" x2="60" y2="16"></line>
+      <line class="stage2" x1="24" y1="80" x2="24" y2="16"></line>
+      <line class="stage1" x1="16" y1="80" x2="32" y2="80"></line>
+    </svg>
+    <div class="break"></div>
+    <div class="hint">
+      <div class="letter" value="F"></div>
+      <div class="letter" value="I"></div>
+      <div class="letter" value="B"></div>
+      <div class="letter" value="R"></div>
+      <div class="letter" value="A"></div>
+      <div class="letter" value="T"></div>
+      <div class="letter" value="O"></div>
+    </div>
+</div>
+
+<div id="final-bottom" class="final-b">
+  <img src="assets/btn_finalizado.png" alt="">
+</div>
+<div id="final-error-bottom" class="final-b-error">
+  <img src="assets/intentalo.png" alt="">
+</div>
+
+<script>
+  const answer = ["F","I","B","R","A","T","O"];
+  let numErrors = 0;
+
+  const removeLetter = letter => {
+    const position = answer.findIndex(item => item === letter);
+    answer.splice( position, 1 );
+
+    if(answer.length < 1){
+      console.log("TERMINADO", window.innerWidth);
+      if( window.innerWidth < 992 ){
+          document.getElementById("final-bottom").style.display = "block";
+      } else {
+          document.getElementById("final").style.display = "block";
+      }
+    }
+  }
+
+  document.getElementById("letter-F").addEventListener( "click",  () => removeLetter("F") );
+  document.getElementById("letter-I").addEventListener( "click",  () => removeLetter("I") );
+  document.getElementById("letter-B").addEventListener( "click",  () => removeLetter("B") );
+  document.getElementById("letter-R").addEventListener( "click",  () => removeLetter("R") );
+  document.getElementById("letter-A").addEventListener( "click",  () => removeLetter("A") );
+  document.getElementById("letter-T").addEventListener( "click",  () => removeLetter("T") );
+  document.getElementById("letter-O").addEventListener( "click",  () => removeLetter("O") );
+
+  let elements = document.getElementsByClassName("error");
+  for(let i = 0; i < elements.length; i++){
+    elements[i].addEventListener('click',() => {
+      numErrors++;
+      if(numErrors >= 10){
+        console.log("INTENTALO DE NUEVO")
+        if( window.innerWidth < 992 ){
+          document.getElementById("final-error-bottom").style.display = "block";
+      } else {
+          document.getElementById("final-error").style.display = "block";
+      }
+      }
+    });
+  }
+
+  document.getElementById("final-error").addEventListener( "click", () => { location.reload(); });
+  document.getElementById("final-error-bottom").addEventListener( "click", () => { location.reload(); });
+
+</script>
+<!-- partial -->
+</body>
+</html>
