@@ -82,6 +82,7 @@ header{
 }
 .instruction{
     color: #545e7f;
+    padding: 0 20px;
 }
 .instruction h1{
     font-size: 20px;

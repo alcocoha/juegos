@@ -63,6 +63,7 @@
   </div>
 </div>
 <div class="container-letters">
+    <div id="block-letters"></div>
     <input type="radio" letter="A" correct="correct" id="letter-A"/>
     <input type="radio" letter="B" correct="correct" id="letter-B"/>
     <input type="radio" letter="C" class="error"/>
@@ -131,7 +132,8 @@
     answer.splice( position, 1 );
 
     if(answer.length < 1){
-      console.log("TERMINADO", window.innerWidth);
+      // console.log("TERMINADO", window.innerWidth);
+      document.getElementById("block-letters").style.display = "block";
       if( window.innerWidth < 992 ){
           document.getElementById("final-bottom").style.display = "block";
       } else {
@@ -153,12 +155,13 @@
     elements[i].addEventListener('click',() => {
       numErrors++;
       if(numErrors >= 10){
-        console.log("INTENTALO DE NUEVO")
+        // console.log("INTENTALO DE NUEVO")
+        document.getElementById("block-letters").style.display = "block";
         if( window.innerWidth < 992 ){
-          document.getElementById("final-error-bottom").style.display = "block";
-      } else {
-          document.getElementById("final-error").style.display = "block";
-      }
+            document.getElementById("final-error-bottom").style.display = "block";
+        } else {
+            document.getElementById("final-error").style.display = "block";
+        }
       }
     });
   }

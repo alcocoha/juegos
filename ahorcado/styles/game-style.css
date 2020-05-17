@@ -362,6 +362,7 @@ html body .hint .letter {
   font-size: 3rem;
   text-align: center;
   color: #434E9D;
+  padding-bottom: 10px;
 }
 html body .hint .letter, html body .hint .letter:before {
   -webkit-transition: .25s;

@@ -121,6 +121,7 @@ header{
 /* ==== TERMINAN ESTILOS PARA EL HEADER === */
 
 .container-letters{
+    position: relative;
     width: 300px;
     margin: auto;
     padding: 20px 20px;
@@ -173,4 +174,14 @@ header{
     display: flex;
     color: #8092A0;
     font-size: 18px;
+}
+
+#block-letters{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    /* background-color: red; */
+    opacity: .5;
+    z-index: 1;
+    display: none;
 }

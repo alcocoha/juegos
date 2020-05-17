@@ -162,6 +162,7 @@ $('input.letter').on('blur',function(){
 // handle directional and letter keys in letter inputs
 $('input.letter').on('keyup',function(e){
     var $current = $(this);
+    // console.log('keyup--->', e.which)
     if (e.which == 38) {      // up arrow moves to square above if it exists
         direction = 'down';
         if (getPrevLetter($current)) {
@@ -192,6 +193,7 @@ $('input.letter').on('keyup',function(e){
 
 // Tab and Shift/Tab move to next and previous words
 $('input.letter').on('keydown',function(e){
+    // console.log('---->e: ', e.which)
     var $current = $(this);
     if (e.which == 9) {       // tab
         e.preventDefault();
@@ -209,11 +211,13 @@ $('input.letter').on('keydown',function(e){
                 getPrevLetter($current).focus().val('');
             }
         }
-    } else if ((e.which>=48 && e.which<=90) || (e.which>=96 && e.which<=111) || (e.which>=186 && e.which<=192) || (e.which>=219 && e.which<=222)) {    // typeable characters move to the next square in the word if it exists
+    } else if ((e.which>=48 && e.which<=90) || (e.which>=96 && e.which<=111) || (e.which>=186 && e.which<=192) || (e.which>=219 && e.which<=222) ) {    // typeable characters move to the next square in the word if it exists
         e.preventDefault();
         $current.val(String.fromCharCode(e.which));
-        if (getNextLetter($current)) {
-            getNextLetter($current).focus();
+        if( e.which != 229){
+            if (getNextLetter($current)) {
+                getNextLetter($current).focus();
+            }
         }
     }
     if (markCorrect) {

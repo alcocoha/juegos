@@ -15,13 +15,14 @@
     .container {
         padding: 10px 0;
         /* background-color: violet; */
+        max-width: 930px;
         flex-direction: row;
         align-items: flex-start;
     }
 
     .game-wrapper{
-        width: 550px;
-        height: 500px;
+        width: 439px;
+        height: 414px;
         padding: 30px;
     }
     .ask-wrapper .crossword-clues .row{

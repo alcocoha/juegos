@@ -1,8 +1,11 @@
 @media (min-width:1200px){
+    .container{
+        max-width: 1150px;
+    }
     .game-wrapper{
-        width: 650px;
-        height: 580px;
-        padding: 50px;
+        width: 560px;
+        height: 480px;
+        padding: 36px;
     }
     .ask-wrapper .crossword-clues .row{
         width: 450px;
@@ -11,7 +14,7 @@
         margin-top: 40px;
     }
     .list{
-        font-size: 18px;
+        font-size: 17px;
     }
     .point-number{
         width: 30px;
@@ -21,8 +24,8 @@
         font-size: 16px;
     }
     .title-direction{
-        padding: 20px;
-        font-size: 20px;
+        padding: 18px;
+        font-size: 17px;
     }
     .across-clues{
         width: 200px;
@@ -31,9 +34,9 @@
         width: 200px;
     }
     .title-direction::before{
-        width: 45px;
-        height: 45px;
-        left: -20px;
+        width: 35px;
+        height: 35px;
+        left: -17px;
         border-radius: 50%;
         top: 12px;
     }

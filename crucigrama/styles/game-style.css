@@ -56,6 +56,7 @@ table.crossword-grid {
   font-size: calc(10px + .25vw);
   color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+  font-size: 9px;
 }
 .grid-square input {
   position: absolute;
@@ -92,7 +93,7 @@ table.crossword-grid {
 .crossword-clues li.correct.active {
   background: #dff082;
 }
-.crossword-clues li.correct label:before {
+/* .crossword-clues li.correct label:before {
   content: "\f00c";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -103,7 +104,7 @@ table.crossword-grid {
   position: absolute;
   left: 0;
   top: 0.1em;
-}
+} */
 .crossword-clues a.hint {
   display: none;
 }

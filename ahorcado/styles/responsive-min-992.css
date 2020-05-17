@@ -42,5 +42,9 @@
         padding-left: 32px;
         font-size: 24px;
     }
+    #block-letters{
+        width: 800px;
+        height: 300px;
+    }
 
 }

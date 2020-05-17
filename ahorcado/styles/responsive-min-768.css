@@ -70,4 +70,8 @@
     html body input {
         margin-top: 25px;
     }
+    #block-letters{
+        width: 500px;
+        height: 400px;
+    }
 }
