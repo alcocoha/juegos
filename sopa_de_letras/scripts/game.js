@@ -6,15 +6,18 @@ var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
 			   "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 var words = [
-			{ "word": "ASCITIS", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt", "direction": "S", "start": 16 },
-			{ "word": "HENLE", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt","direction": "E", "start": 18 },
-			{ "word": "POTENCIA", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt","direction": "S", "start": 10 },
-			{ "word": "HIPOKALEMIA", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt","direction": "E", "start": 110 },
-			{ "word": "DISLIPIDEMIA", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt","direction": "E", "start": 121 },
-			{ "word": "VIDAMEDIA", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt","direction": "E", "start": 137 },
-			{ "word": "CIPROFIBRATO", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt","direction": "E", "start": 152 },
-			{ "word": "ESPIRONOLACTONA", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt","direction": "E", "start": 181 },
-			{ "word": "APEGO", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt","direction": "E", "start": 199 },
+			{ "word": "APEGO", "description": "APEGO", "direction": "SE", "start": 50 },
+			{ "word": "DISLIPIDEMIA", "description": "DISLIPIDEMIA", "direction":"E", "start": 1 },
+			{ "word": "EFICACIA", "description": "EFICACIA","direction": "S", "start": 46 },
+			{ "word": "CIPROFIBRATO", "description": "CIPROFIBRATO","direction": "E", "start": 214 },
+			{ "word": "DIURÉTICO", "description": "DIURÉTICO","direction": "S", "start": 34 },
+			{ "word": "FUROSEMIDA", "description": "FUROSEMIDA", "direction": "E", "start": 186 },
+			{ "word": "HIPERTENSIÓN", "description": "HIPERTENSIÓN", "direction": "E", "start": 166 },
+			{ "word": "MIXTA", "description": "MIXTA","direction": "S", "start": 77 },
+			{ "word": "OROXADIN", "description": "OROXADIN","direction": "S", "start": 26 },
+			{ "word": "LASIX", "description": "LASIX","direction": "S", "start": 14 },
+			{ "word": "NEFRÓTICO", "description": "NEFRÓTICO","direction": "S", "start": 58 },
+			{ "word": "TRIGLICÉRIDOS", "description": "TRIGLICÉRIDOS","direction": "E", "start": 198 },
 			];
 
 var SIZE = 225;

@@ -3,14 +3,14 @@ var words = [
     {number:2,direction:'down',row:1,column:7,clue:'Mayor reducción de triglicéridos',answer:'EFICACIA',hint:''},
     {number:3,direction:'down',row:2,column:2,clue:'Presión elevada',answer:'HIPERTENSIÓN',hint:''},
     {number:4,direction:'across',row:3,column:1,clue:'Alteración de lípidos',answer:'DISLIPIDEMIA',hint:''},
-    {number:5,direction:'down',row:4,column:16,clue:'Retención de liquidos',answer:'EDEMAT',hint:''},
-    {number:6,direction:'down',row:1,column:18,clue:'Riesgo prevalente en la dislipidemia',answer:'CARDIOVASCULAR',hint:''},
+    {number:5,direction:'down',row:4,column:16,clue:'Retención de liquidos',answer:'EDEMA',hint:''},
+    {number:6,direction:'down',row:5,column:14,clue:'Furosemida',answer:'LASIX',hint:''},
     {number:7,direction:'down',row:6,column:4,clue:'Grupo terapéutico MOA',answer:'DIURÉTICO',hint:''},
-    {number:8,direction:'down',row:11,column:9,clue:'Número de dosis diarias de Ciprofibrato',answer:'UNA',hint:''},
-    {number:9,direction:'across',row:9,column:11,clue:'Una sola toma',answer:'FIBRATOS',hint:''},
+    {number:8,direction:'down',row:6,column:10,clue:'Número de dosis diarias de Ciprofibrato',answer:'OROXADIN',hint:''},
+    {number:9,direction:'across',row:6,column:14,clue:'Una sola toma',answer:'APEGO',hint:''},
     {number:10,direction:'across',row:7,column:2,clue:'Contiene moléculas de glicerol',answer:'TRIGLICÉRIDOS',hint:''},
-    {number:11,direction:'across',row:6,column:14,clue:'Grupo terapéutico',answer:'APEGO',hint:''},
-    {number:12,direction:'across',row:13,column:4,clue:'Insuficiencia congestiva',answer:'CARDIACA',hint:''},
+    {number:11,direction:'across',row:10,column:6,clue:'Grupo terapéutico',answer:'FIBRATO',hint:''},
+    {number:12,direction:'across',row:12,column:6,clue:'Insuficiencia congestiva',answer:'CARDIACA',hint:''},
 ];
 
 // Set global variables
