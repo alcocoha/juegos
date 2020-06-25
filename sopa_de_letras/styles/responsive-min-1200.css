@@ -1,6 +1,7 @@
 @media (min-width:1200px){
     #main {
         padding: 0 !important;
+        max-width: 1170px;
         /* background-color: tomato; */
     }
     .words-content {
